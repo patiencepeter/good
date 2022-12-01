@@ -1,0 +1,35 @@
+.searchin input{
+   border-style: dashed;
+background: wheat;
+color: rgb(48, 101, 148);
+   padding-right: 15em;
+   padding-top: 0.8em;
+   padding-bottom:0.5em;
+   margin-right: 51em;
+   margin-left: 3em;
+   display: block;
+   
+   
+
+}
+
+.sub input{
+   margin-left: 23em;
+   padding-right: 5em;
+   margin-top: -2em;
+   justify-content: absolute;
+   display: block;
+   padding-top: 0.5em;
+   padding-bottom: 0.5em;
+   padding-left: 7px;
+   text-align: center;
+   font-size: 18px;
+   font-weight: 3em;
+   cursor: pointer;
+   border-style: none;
+   background: yellow;
+ border-radius: 4px;
+   color: blue;
+   
+
+}
