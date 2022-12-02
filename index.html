@@ -5,77 +5,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="/src/styles.css">
-    <title>plus</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+ rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/e1ad726d53.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/src/style.css">
-    
-
-      
-
-       
-    
-
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <title>current-weather</title>
 </head>
 <body>
-      
-    <form action="">
+    <div class="searching-app">
+    <form class="search" id="search">
+     <div class="row">
 
-          <div class="row" >
-            <div class="col-9 inputing">
-              <input
-                type="search" placeholder="Type a city.." autofocus="on" autocomplete="off" class="form-control shadow-sm"
-                 />
+        <div class="col-6">
+            <input type="search"
+            autofocus="on"
+            autocomplete="off"
+            class="form-control shadow-sm"
+            placeholder="input a city"
+            id="area-input"
+            />
+        </div>
+        <div class="col-3">
+            <input type="submit"
+            value="search"
+            class="form-control btn btn-primary shadow-sm w-100"
+
+            />
+        </div>
+        <div class="col-3">
+              <button
+                class="btn btn-success w-100"
+                id="current-location-button"
+              >
+                Current
+              </button>
             </div>
-            <div class="col-3 sub ">
-              <input type="submit" value="Search"  class="form-control btn btn-primary shadow-sm"/>
+
+     </div>
+
+
+    </form>
+
+     <h1 id="area"></h1>
+     
+        <ul>
+          <li id="date"></li>
+          <li id="good"></li>
+        </ul>
+        <div class="row">
+          <div class="col-6">
+            <div class="clearfix">
+              <div class="float-left">
+                <span class="tem" id="tem"></span>
+                  
+                <span class="celsius">°C</span>
+              </div>
+              <i class="fa-sharp fa-solid fa-cloud weather-icon"></i>
             </div>
           </div>
-
-
-
-      
-
-    <div class="container">
-        <div class="grow">
-        <h1 class="start">Paris, France
-
-        </h1>
-        <p>Wednesday 12:00 <br>
-        Cloudy</p>
-
-        </div>
-        
-        
-        
-
-        <div class="row  ">
-
-            <div class="col-6">
-                
-                <i class="fa-sharp fa-solid fa-cloud weather"></i>
-                <div class="col-6">
-               <h2> 20</h2> <sup>&deg;C|&deg;F</sup>
-               </div>
-
-            </div>
-
-            <div class="col-6 top">
-                <b> precipitation 5%</b> <br>
-               <b> Humidity 83%</b> <br>
-               <b> Wind 13Km/h </b><br> <br>
-                <button class="first">Temperature</button>
-                <button class="first">Precipitation</button>
-                <button class="first">Wind</button>
-            </div>
+          <div class="col-6">
+            <ul>
+              <li>Humidity: <span id="humidity"></span>%</li>
+              <li>Wind: <span id="wind"></span> km/h</li>
+            </ul>
+          </div>
         </div>
 
-    </div>
-    <div class="row u">
+         <div class="row u">
      <div class="col-1">
         <p>
             Wed <br>
@@ -151,9 +151,16 @@
 
      </div>
      
+   </div>
+    
+      </div>
 
-    </form>
+      
+    </div>
 
-    <script src="/src/script.js"></script>
+
+    
+
+    <script src="/script.js"></script>
 </body>
 </html>

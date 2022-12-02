@@ -1,117 +1,73 @@
-  form{
-            display: flexbox;
-            background: rgb(223, 219, 214);
-            flex-direction: column;
-            align-items: center;
-            margin-top:4em ;
-            padding-bottom: 0em;
-            margin-left: 3em;
-            margin-right: 12em;
-            padding-top: 1em;
-        }
-        .row h2{
-            font-size: 5em;
-            margin-top: -1em;
-        }
+body {
+  font-family: arial, sans-serif;
+}
 
-        .container{
-            margin-left: 3em;
-            margin-top: -5em;
-            font-family: 'Roboto', sans-serif;
-        }
+h1 {
+  color: #7c7c7c;
+  font-size: 24px;
+  font-weight: 100;
+  line-height: 28px;
+  margin: 0;
+}
 
-       .row sup{
-            
-            margin-top: -5em;
-            font-size: 1em;
-            margin-left: 14em;
-            
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            text-align: center;
-        }
+ul {
+  margin: 0 0 10px;
+  padding: 0;
+}
 
-        button{
-            padding-top: 0.5em;
-            padding-bottom: 00.5em;
-            font-family: 'Roboto', sans-serif;
-            text-decoration: none;
-            border-style: none;
-            color: aliceblue;
-            padding-right: 2em;
-        }
+li {
+  color: #7c7c7c;
+  font-size: 16px;
+  font-weight: 100;
+  height: 19px;
+  line-height: 1;
+  list-style: none;
+}
 
-        button:hover{
-            color: rgb(0, 162, 255);
-            
+.searching-app {
+  border: 1px solid #dadde1;
+  padding: 25px;
+  margin: 20px auto;
+  border-radius: 10px;
+  max-width: 800px;
+}
 
+.weather-icon {
+  font-size: 5em;
+  width: 64px;
+  
+  margin-top: -6em;
+  margin-bottom: -0.5em;
+  color: rgba(84, 138, 199, 0.788);
+  
+  
+}
 
+.tem {
+  color: rgb(33, 33, 33);
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 1;
+  margin-left: 2em;
+}
 
-        }
+.celsius {
+  position: relative;
+  top: -34px;
+  margin-left: 1em;
+}
 
-        .first{
-            color: #000;
-          font-family: Arial, Helvetica, sans-serif;
-          
-        }
-        .weather{
-             color: yellow;
-        font-weight: 32px;
-        font-size: 100px
-        
-        
-        
-        }
+.search-form {
+  margin-bottom: 20px;
+}
 
-        h2{
-            font-weight: 100px;
-            font-size: 50px;
-            display: flex;
-            margin-left: 1.7em;
-            margin-top: -12em;
-            font-family: 'Roboto', sans-serif;
-        }
-
-        .u{
-            align-items: center;
-            
-            margin-left: 2.5em;
-            margin-top: 9em;
-            margin-bottom: 2em;
-            font-weight: 25em;
-            font-size: 1.5em;
-            justify-content: space-around;
-            
-        }
-
-        .top{
-            margin-left: 28em;
-            margin-top: 2em;
-
-        }
-
-        .long{
+  .long{
             font-size: 2em;
-            color: azure;
+            color: rgb(24, 89, 230);
             
         }
 
         .short{
             font-size: 2em;
             color: yellow;
-        }
-
-        .grow{
-            margin-top: 9em;
-        }
-
-        .inputing{
-          padding-right: 12em;    
-            
-        
-        }
-
-        .sub{
-            margin-left: -12em;
         }
